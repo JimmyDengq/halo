@@ -1,5 +1,7 @@
 package run.halo.app;
 
+import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -16,6 +18,7 @@ import run.halo.app.infra.properties.HaloProperties;
  * @author guqing
  * @date 2017-11-14
  */
+@Slf4j
 @EnableScheduling
 @SpringBootApplication(scanBasePackages = "run.halo.app", exclude =
     IntegrationAutoConfiguration.class)
@@ -26,6 +29,7 @@ public class Application {
         new SpringApplicationBuilder(Application.class)
             .applicationStartup(new BufferingApplicationStartup(1024))
             .run(args);
+        log.info("Halo started successfully.");
     }
 
 }
