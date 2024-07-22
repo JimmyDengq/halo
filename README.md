@@ -68,3 +68,7 @@ Halo 使用 GPL-v3.0 协议开源，请遵守开源协议。
 ## 状态
 
 ![Repobeats analytics](https://repobeats.axiom.co/api/embed/ad008b2151c22e7cf734d2688befaa795d593b95.svg "Repobeats analytics image")
+
+## Something Else
+<p align="center">keep it simple, stupid.
+</p>
